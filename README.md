@@ -47,7 +47,7 @@ That's it. Claude loads the skill automatically when a task calls for it.
 
 Built and maintained by **Bogusław Podhalicz**, design lead and senior product designer. These are the skills I use in real client and team work - sharpening how AI handles the parts of the job that need actual craft and judgment.
 
-Find me on LinkedIn: [your-linkedin-url]
+Find me on LinkedIn: [https://www.linkedin.com/in/boguslaw-podhalicz/]
 
 ## Attribution
 
