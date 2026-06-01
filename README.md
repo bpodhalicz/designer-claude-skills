@@ -28,7 +28,7 @@ More on the way.
 
 `no-bullshit-research`
 - What's the current state of AI design tools, with sources?
-- Compare these three analytics vendors — verified facts only
+- Compare these three analytics vendors - verified facts only
 - Find the actual numbers behind this claim, or tell me they don't exist
 
 ## Install
