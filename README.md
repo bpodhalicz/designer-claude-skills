@@ -35,10 +35,10 @@ More on the way.
 
 A skill is a folder (`SKILL.md` plus optional references). The packaged `.skill` files in [`dist/`](dist) are just zipped versions, ready to import.
 
-1. Grab a skill from the [latest release](../../releases/latest) — or download the folder from `skills/`.
+1. Grab a skill from the [latest release](../../releases/latest) - or download the folder from `skills/`.
 2. Add it to Claude:
-   - **Claude.ai / Claude apps** — open Settings, find Skills, upload the `.skill` file. Current steps: https://support.claude.com
-   - **Claude API / Agent SDK** — use the Skills API: https://docs.claude.com/en/docs/build-with-claude/skills
+   - **Claude.ai / Claude apps** - open Settings, find Skills, upload the `.skill` file. Current steps: https://support.claude.com
+   - **Claude API / Agent SDK** - use the Skills API: https://docs.claude.com/en/docs/build-with-claude/skills
    - **Claude Code** — drop the unzipped folder into your skills directory.
 
 That's it. Claude loads the skill automatically when a task calls for it.
