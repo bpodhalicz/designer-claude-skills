@@ -1,12 +1,12 @@
 # Designer Claude Skills
 
-> A growing library of Claude skills that encode how experienced practitioners actually think — UX psychology, rigorous research, sharp critique, and more. For people building digital products, not only designers. AI that reasons like a craftsperson, not a generic prompt.
+> A growing library of Claude skills that encode how experienced practitioners actually think - UX psychology, rigorous research, sharp critique, and more. For people building digital products, not only designers. AI that reasons like a craftsperson, not a generic prompt.
 
 ## Why this exists
 
 Generic AI gives you text. These skills give you judgment.
 
-Each one teaches Claude a specific way of working — a named framework, a discipline, a way of reasoning — and makes it apply that every time instead of defaulting to a confident-sounding average. The result is output you can actually ship: a UX critique grounded in real principles, research that survives a fact-check, a decision you can defend.
+Each one teaches Claude a specific way of working - a named framework, a discipline, a way of reasoning, and makes it apply that every time instead of defaulting to a confident-sounding average. The result is output you can actually ship: a UX critique grounded in real principles, research that survives a fact-check, a decision you can defend.
 
 Built by a working design lead, not scraped from a prompt pack. New skills get added as the practice grows.
 
@@ -14,7 +14,7 @@ Built by a working design lead, not scraped from a prompt pack. New skills get a
 
 | Skill | What it does |
 |-------|--------------|
-| [`ux-psychology-review`](skills/ux-psychology-review) | Reviews and critiques UI/UX through 106 named cognitive biases and design principles. Tells you what a design does well, what it violates, and where it risks dark patterns — every point tied to a principle you can challenge. |
+| [`ux-psychology-review`](skills/ux-psychology-review) | Reviews and critiques UI/UX through 106 named cognitive biases and design principles. Tells you what a design does well, what it violates, and where it risks dark patterns - every point tied to a principle you can challenge. |
 | [`no-bullshit-research`](skills/no-bullshit-research) | A research discipline that refuses to make things up. Every claim traces to a real, fetched, date-checked source; anything unverified gets flagged. Built to protect you from repeating something the AI invented. |
 
 More on the way.
@@ -45,7 +45,7 @@ That's it. Claude loads the skill automatically when a task calls for it.
 
 ## About
 
-Built and maintained by **Bogusław Podhalicz**, design lead and senior product designer. These are the skills I use in real client and team work — sharpening how AI handles the parts of the job that need actual craft and judgment.
+Built and maintained by **Bogusław Podhalicz**, design lead and senior product designer. These are the skills I use in real client and team work - sharpening how AI handles the parts of the job that need actual craft and judgment.
 
 Find me on LinkedIn: [your-linkedin-url]
 
@@ -55,4 +55,4 @@ Find me on LinkedIn: [your-linkedin-url]
 
 ## License
 
-[MIT](LICENSE). The writing, organization, and packaging are mine to share; the frameworks and research cited above remain the work of their authors — credit them accordingly.
+[MIT](LICENSE). The writing, organization, and packaging are mine to share; the frameworks and research cited above remain the work of their authors - credit them accordingly.
