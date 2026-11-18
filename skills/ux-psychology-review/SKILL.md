@@ -1,20 +1,26 @@
 ---
 name: ux-psychology-review
-description: Apply design psychology — cognitive biases and behavioral principles — to review UI/UX work and generate ideas, recommendations, and critiques grounded in named principles. Use this skill whenever the user asks for a UX review, design critique, conversion analysis, onboarding/checkout/pricing/paywall feedback, "why might users drop off here," "how do I get users to X," or any product-design task where human psychology matters. Also trigger when the user wants to brainstorm UX improvements, evaluate a flow against best practices, name the principle behind a pattern they've seen, or check a design for dark patterns. Don't wait for the user to say "psychology" — design reviews and UX recommendations are this skill's bread and butter even when phrased casually ("does this signup flow look ok?", "ideas for our pricing page", "review this dashboard").
+description: Apply design psychology — cognitive biases and behavioral principles — to review UI/UX work and generate ideas, recommendations, and critiques grounded in named principles. Use this skill whenever the user asks for a UX review, design critique, conversion analysis, onboarding/checkout/pricing/paywall feedback, "why might users drop off here," "how do I get users to X," or any product-design task where human psychology matters. Also trigger when the user wants to check a research synthesis, roadmap or design decision for team bias, brainstorm UX improvements, evaluate a flow against best practices, name the principle behind a pattern they've seen, or check a design for dark patterns. Don't wait for the user to say "psychology" — design reviews and UX recommendations are this skill's bread and butter even when phrased casually ("does this signup flow look ok?", "ideas for our pricing page", "review this dashboard").
+license: MIT. See LICENSE.md
+metadata:
+  author: "Bogusław Podhalicz (Hotkeys Supply)"
+  version: "1.2.0"
+  languages: "en, pl"
 ---
 
 # UX Psychology Review
 
-A working knowledge base of **106 cognitive biases and design principles** for reviewing UI/UX work and generating recommendations grounded in named psychology. Adapted from growth.design's "Psychology of Design" framework, which builds on Buster Benson's cognitive bias codex.
+A working knowledge base of **106 cognitive biases and design principles** for reviewing UI/UX work and generating recommendations grounded in named psychology. The selection and the four-stage structure follow public catalogues of cognitive biases, chiefly Buster Benson's cognitive bias codex and growth.design's "Psychology of Design" (this skill is not affiliated with either). The one-line descriptions and the review method are original to this skill.
 
 ## What this skill does
 
-Two jobs, often blended:
+Three jobs, often blended:
 
 1. **Review** — Given a design (screenshot, description, flow, or live URL), diagnose which principles it leverages well, which it violates, and which dark patterns it risks.
 2. **Generate** — Given a UX problem ("how do we improve activation", "what should the pricing page do"), propose concrete, principle-backed ideas.
+3. **Check a team's decision** — Given a research synthesis, decision log, roadmap rationale, test write-up or estimate, flag the designer-side biases that may be bending it (confirmation bias, anchoring, sunk cost, false consensus…), with the signal, a check and a concrete step.
 
-Both modes name principles explicitly. A recommendation like "add social proof near the CTA — this leverages the Bandwagon Effect and reduces decision anxiety" is more useful than an unattributed gut call, because the user can challenge it, extend it, or check it against literature.
+All modes name principles explicitly. A recommendation like "add social proof near the CTA — this leverages the Bandwagon Effect and reduces decision anxiety" is more useful than an unattributed gut call, because the user can challenge it, extend it, or check it against literature.
 
 ## The framework: 4 stages of user cognition
 
@@ -33,7 +39,7 @@ Good design respects all four. Bad design fights one or more.
 
 1. **Get the artifact in front of you.** If the user shared a URL, fetch it. If a screenshot, look carefully. If only a description, ask one or two specific questions before guessing — designs are visual, and a vague description leads to vague feedback.
 
-2. **Identify the user's goal at this surface.** Onboarding? Checkout? Re-engagement? Pricing decision? You can't review a design without knowing what success looks like.
+2. **Identify the user's goal at this surface and the design's stage.** Onboarding? Checkout? Re-engagement? Pricing decision? You can't review a design without knowing what success looks like. Also establish the stage — early exploration or final polish — from what the user says, or state your assumption. Exploration gets feedback on direction and flow; polish gets feedback on details.
 
 3. **Walk the four stages.** For each, note which principles are in play:
    - *Filter:* Where does the eye go? Is the hierarchy clear? Is there cognitive overload?
@@ -41,18 +47,63 @@ Good design respects all four. Bad design fights one or more.
    - *Action:* What's the easiest path? What friction exists? What's the cost of choosing wrong?
    - *Memory:* What will they remember tomorrow? What's the peak? The end?
 
-4. **Output a structured review.** Use this shape:
-   - **Strengths** — 2-4 principles the design uses well (named, with the specific element)
-   - **Issues** — 2-5 principles being violated or missed (named, with the specific element and why it matters)
-   - **Dark pattern flags** — anything that risks crossing the line (see *Dark Patterns* below)
-   - **Recommendations** — concrete changes, each tied to a named principle
+4. **Output a structured review.** Keep these sections in this order, so reviews of different screens can be compared:
+
+   ```
+   ### Context
+   One line: surface, user goal, stage, and what you reviewed (screenshot, URL, description). Name anything you could not see (other states, the next screen, real copy).
+
+   ### Strengths
+   2-4 items: element → principle → why it works.
+
+   ### Issues
+   | # | Element | Principle | What it does to the user | Priority | Basis |
+   |---|---------|-----------|--------------------------|----------|-------|
+
+   ### Dark pattern flags
+   Each flag: pattern → element → ethical alternative. If none: "None found."
+
+   ### Recommendations
+   Ordered by priority. Each: concrete change → principle → the issue # it resolves.
+   ```
+
+   **Priority** — use exactly one of:
+   - **Must fix** — blocks the user's goal on this surface, or crosses into a dark pattern.
+   - **Should fix** — adds friction or doubt on the main path.
+   - **Could improve** — polish; worth doing when the above are done.
+
+   **Basis** — use exactly one of:
+   - **Observed** — visible in the artifact you reviewed.
+   - **Assumed** — depends on something you could not see; say what (e.g. "assumes no saved payment method").
+
+   2-5 issues is the usual range. Every *Must fix* gets a recommendation.
+
+5. **Check the review before sending it.** Every box must pass:
+   - [ ] Every issue names a specific element and one principle from the index. An issue you cannot point at in the artifact is marked *Assumed* or dropped.
+   - [ ] No invented numbers: no conversion lifts, percentages or effect sizes unless the user supplied them or you name a source (see *Sources and certainty*). Where a number would help, write `[metric to confirm]`.
+   - [ ] 5-7 principles across the whole review, not more.
+   - [ ] *Dark pattern flags* is present, even when it says "None found."
+   - [ ] Recommendations are ordered Must → Should → Could, and each points to an issue #.
+   - [ ] The review reports; it does not redesign the screen or edit files unless the user asked for that.
 
 ### When generating ideas
 
 1. **Restate the problem in terms of user behavior.** "How do we improve activation?" → "What makes a new user reach their first 'aha' moment faster?"
 2. **Pick 3-5 principles most relevant to that behavior.** Use the use-case index in `references/by-use-case.md`.
 3. **For each, propose one concrete tactic.** Tactic + principle + rationale. Skip principles that don't yield a concrete idea — don't pad.
-4. **Flag tradeoffs.** Many principles have "when it backfires" notes. If a recommendation could backfire, say so.
+4. **Say how to check each idea.** Name the behavior or metric it should move and how to test it (A/B test, usability test, analytics event). Do not predict the size of the effect; write `[metric to confirm]` if a target is needed.
+5. **Flag tradeoffs.** If a tactic could backfire or slide into a dark pattern, say so and give the ethical variant.
+
+### When checking a team's decision
+
+The same biases that shape users shape the team that designs for them. Use this mode when the user shares a research synthesis, a decision record, a roadmap or feature rationale, an A/B test write-up, an estimate or a design rationale, or asks "are we fooling ourselves here?".
+
+1. **Read the artefact and name the decision** in one sentence, plus the evidence offered for it.
+2. **Walk the designer-side biases** in `references/team-decisions.md`. Flag only those with a visible signal in the artefact, and quote or point to it.
+3. **For each flag give the check and one concrete step** (a question to answer, a small test, a change to the process).
+4. **Say what looks solid**, then give a verdict: holds / holds after checks / revisit.
+
+Treat every flag as a risk to test, not an accusation. Never comment on individuals' motives.
 
 ### When the user names a single principle
 
@@ -60,10 +111,10 @@ Just answer their question. Pull the entry from the relevant reference file, giv
 
 ## The full index — all 106 principles
 
-Each principle is listed with its category, a one-line summary, and the reference file where the full entry lives. Read the reference file when you need the definition, examples, "when to apply," "when it backfires," and citations for a specific principle.
+Each principle is listed with its category and a one-line summary; the same list, grouped by stage, is in the reference files. For a fuller definition, examples, when to apply it and when it backfires, explain from established knowledge and say so. Any specific study, effect size or statistic must come from a source you can name, or be left out (see "Sources and certainty" below).
 
 ### 🙈 Filter information *(the user's brain ignores most of what you put in front of it)*
-*Full entries: `references/01-filter-information.md`*
+*Index: `references/01-filter-information.md`*
 
 | # | Principle | One-liner |
 |---|---|---|
@@ -103,7 +154,7 @@ Each principle is listed with its category, a one-line summary, and the referenc
 | 34 | Curiosity Gap | A teased-but-incomplete piece of information demands closure. |
 
 ### 👀 Search for meaning *(users invent stories to fill gaps in what they see)*
-*Full entries: `references/02-search-for-meaning.md`*
+*Index: `references/02-search-for-meaning.md`*
 
 | # | Principle | One-liner |
 |---|---|---|
@@ -138,7 +189,7 @@ Each principle is listed with its category, a one-line summary, and the referenc
 | 63 | Negativity Bias | Bad experiences/reviews weigh more than good ones. |
 
 ### ⏰ Act within time pressure *(decisions are rushed and shortcut-driven)*
-*Full entries: `references/03-act-within-time.md`*
+*Index: `references/03-act-within-time.md`*
 
 | # | Principle | One-liner |
 |---|---|---|
@@ -171,7 +222,7 @@ Each principle is listed with its category, a one-line summary, and the referenc
 | 90 | Risk Aversion | Faced with equal expected value, users prefer the certain option. |
 
 ### 💾 Store what mattered *(memory is selective and reconstructed)*
-*Full entries: `references/04-store-what-mattered.md`*
+*Index: `references/04-store-what-mattered.md`*
 
 | # | Principle | One-liner |
 |---|---|---|
@@ -182,8 +233,8 @@ Each principle is listed with its category, a one-line summary, and the referenc
 | 95 | Zeigarnik Effect | Unfinished tasks linger in memory better than completed ones. |
 | 96 | Spacing Effect | Spread-out exposure beats massed exposure for retention. |
 | 97 | Method of Loci / Spatial Memory | Spatial layout helps recall. Consistent placement matters. |
-| 98 | Chunking | Group information into 5-9 unit clusters; users can hold those in working memory. |
-| 99 | Miller's Law | "7 ± 2" working memory limit. Don't ask the user to hold more. |
+| 98 | Chunking | Group information into small clusters so people can hold it in working memory. |
+| 99 | Miller's Law | Working memory is small ("7 ± 2" classically, about four chunks in later research). Don't make users hold much. |
 | 100 | Storytelling Recall | Stories are remembered as wholes; bullet lists are not. |
 | 101 | Mere Exposure Effect | Repeated exposure increases liking, even without explicit reasoning. |
 | 102 | Google Effect | If users can look it up, they don't memorize it. Don't expect them to. |
@@ -219,32 +270,11 @@ When the user asks for ideas, prefer ethical framings. If a tactic *only* works 
 
 ## How to use the reference files
 
-Each category file has the full entry for every principle in that category, in this shape:
+- `references/01-filter-information.md` … `04-store-what-mattered.md`: the principles of each stage with their one-line summaries. Use them to pick the right principle and name it consistently.
+- `references/team-decisions.md`: designer-side biases for the decision check (signal, check, step), each mapped to its number in the index, plus further reading.
+- `references/by-use-case.md`: a cross-index from common UX problems (pricing, onboarding, paywall, cart abandonment, retention, error states…) to the principles most relevant. Use it when generating ideas: pick the use case, then the principles.
 
-```
-## [Number]. [Principle Name]
-**Category:** [Filter / Meaning / Time / Memory]
-**Also known as:** [aliases if any]
-**Use cases:** [pricing, onboarding, retention, …]
-
-**Definition.** [1-2 sentences, plain English.]
-
-**Why it works.** [The cognitive/emotional mechanism.]
-
-**Examples in the wild.**
-- [Concrete UX example with what it does and why]
-- [Second example, different surface]
-
-**When to apply.** [Specific UX situations where this is the right tool.]
-
-**When it backfires.** [Failure modes, dark-pattern adjacency, overuse.]
-
-**Citations.**
-- [Source 1]
-- [Source 2]
-```
-
-There's also `references/by-use-case.md` — a cross-index from common UX problems (pricing, onboarding, paywall, cart abandonment, retention, error states…) to the principles most relevant. Use this when generating ideas: pick the use case, look up the relevant principles, then pull their full entries.
+The reference files hold summaries, not literature reviews. When a review needs more than the summary, explain the principle from established knowledge, and keep the certainty rules below.
 
 ## Output style
 
@@ -253,14 +283,12 @@ There's also `references/by-use-case.md` — a cross-index from common UX proble
 - **Don't list everything.** A review of 15 principles is unreadable. Pick the 5-7 that matter most for *this* design.
 - **Disagree when warranted.** If the user pushes a principle that's wrong for their context, say so and explain. The skill exists to be useful, not validating.
 - **Cite when uncertain.** If you're stretching beyond what the reference files contain, say "I'm extrapolating here" and note it.
+- **Write in the user's language.** Keep principle names in English as in the index; they are the terms the user can look up.
 
-## Notes on sources
+## Sources and certainty
 
-This knowledge base draws from:
-- **growth.design** — the original 106-principle framework (the structure and category approach come from here)
-- **Buster Benson's cognitive bias codex** — the 4-stage organizing model
-- **Nielsen Norman Group, Interaction Design Foundation** — applied UX research
-- **Behavioral economics literature** — Kahneman, Thaler, Cialdini for the underlying mechanisms
-- **Wikipedia + The Decision Lab** — for cross-checking definitions
+The principles come from well-known work in psychology, behavioural economics and UX research: Buster Benson's cognitive bias codex and growth.design's "Psychology of Design" (selection and structure), Nielsen Norman Group and the Interaction Design Foundation (applied UX), and the behavioural-economics literature (Kahneman, Thaler, Cialdini) for the mechanisms.
 
-Specific citations live in each principle's entry. When the literature disagrees on a definition or effect size, note the disagreement rather than picking one.
+- **Name the principle, not a number.** Never quote an effect size, a percentage or a study result from memory. If a recommendation needs one, find and name the source, or say the effect is directional.
+- **Some popular principles are contested.** Miller's "7 ± 2" has been revised by later work (closer to about four chunks), and priming results vary in replication. Say so when you lean on them.
+- **When sources disagree** on a definition or effect, note the disagreement rather than picking one.

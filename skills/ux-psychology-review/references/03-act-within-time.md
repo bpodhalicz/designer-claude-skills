@@ -1,8 +1,6 @@
-# Act Within Time Pressure — Full Entries
+# Act Within Time Pressure — Principle Index
 
 *Stage 3 of 4. Users decide under time pressure and cognitive load. Shortcuts (heuristics) take over. These principles describe what tilts the decision in the moment.*
-
-> **Phase 2 enrichment status:** Stub. Full entries pending.
 
 ---
 
@@ -60,7 +58,7 @@
 ## 81. Reactance
 *Users push back against perceived loss of autonomy.*
 
-## 82. Forer/Barnum (Action variant)
+## 82. Forer/Barnum (Action)
 *"This was made for you" framing increases buy-in.*
 
 ## 83. Labor Illusion
@@ -72,7 +70,7 @@
 ## 85. Friction
 *Strategic difficulty: where to add it, where to remove it.*
 
-## 86. Confirmation (Action gate)
+## 86. Confirmation (Action)
 *Make destructive actions take a second step.*
 
 ## 87. Convenience Bias

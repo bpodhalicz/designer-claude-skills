@@ -1,8 +1,6 @@
-# Store What Mattered — Full Entries
+# Store What Mattered — Principle Index
 
 *Stage 4 of 4. Memory is selective and reconstructive. What the user remembers about a product is rarely what happened — it's a compressed, edited version. These principles describe what survives.*
-
-> **Phase 2 enrichment status:** Stub. Full entries pending.
 
 ---
 
@@ -28,10 +26,10 @@
 *Spatial layout helps recall. Consistent placement matters.*
 
 ## 98. Chunking
-*Group information into 5-9 unit clusters; users can hold those in working memory.*
+*Group information into small clusters so people can hold it in working memory.*
 
 ## 99. Miller's Law
-*"7 ± 2" working memory limit. Don't ask the user to hold more.*
+*"7 ± 2" is the classic figure; later research suggests about four chunks. Either way, don't ask the user to hold much.*
 
 ## 100. Storytelling Recall
 *Stories are remembered as wholes; bullet lists are not.*

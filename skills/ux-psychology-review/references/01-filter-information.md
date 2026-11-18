@@ -1,8 +1,6 @@
-# Filter Information — Full Entries
+# Filter Information — Principle Index
 
 *Stage 1 of 4. Users filter out most input; the brain saves attention for what looks relevant. These principles describe how attention gets allocated and what slips through.*
-
-> **Phase 2 enrichment status:** Stub. Full entries pending.
 
 ---
 
