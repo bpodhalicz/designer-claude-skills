@@ -14,7 +14,7 @@ Built by a working design lead, not scraped from a prompt pack. New skills get a
 
 | Skill | What it does |
 |-------|--------------|
-| [`ux-psychology-review`](skills/ux-psychology-review) | Reviews and critiques UI/UX through 106 named cognitive biases and design principles. Tells you what a design does well, what it violates, and where it risks dark patterns - every point tied to a principle you can challenge. |
+| [`ux-psychology-review`](skills/ux-psychology-review) | Reviews and critiques UI/UX through 106 named cognitive biases and design principles. Tells you what a design does well, what it violates, and where it risks dark patterns - every point tied to a principle you can challenge and given a priority. Also checks a team's research synthesis or roadmap rationale for designer-side bias. |
 | [`no-bullshit-research`](skills/no-bullshit-research) | A research discipline that refuses to make things up. Every claim traces to a real, fetched, date-checked source; anything unverified gets flagged. Built to protect you from repeating something the AI invented. |
 
 More on the way.
@@ -25,6 +25,7 @@ More on the way.
 - Review this onboarding flow and name what's working and what isn't [paste screenshot]
 - Why might users drop off on our pricing page?
 - Is this paywall using any dark patterns?
+- Check this research synthesis for bias
 
 `no-bullshit-research`
 - What's the current state of AI design tools, with sources?
@@ -34,6 +35,17 @@ More on the way.
 ## Install
 
 A skill is a folder (`SKILL.md` plus optional references). The packaged `.skill` files in [`dist/`](dist) are just zipped versions, ready to import.
+
+**Claude Code, Cursor, Codex and other agents** — install with the [skills CLI](https://skills.sh):
+
+```bash
+npx skills add bpodhalicz/designer-claude-skills --skill ux-psychology-review
+npx skills add bpodhalicz/designer-claude-skills --skill no-bullshit-research
+# or both at once
+npx skills add bpodhalicz/designer-claude-skills
+```
+
+**Manual install**
 
 1. Grab a skill from the [latest release](../../releases/latest) - or download the folder from `skills/`.
 2. Add it to Claude:
@@ -51,7 +63,7 @@ Find me on LinkedIn: [https://www.linkedin.com/in/boguslaw-podhalicz/]
 
 ## Attribution
 
-`ux-psychology-review` adapts the *Psychology of Design* framework from [growth.design](https://growth.design) and Buster Benson's cognitive bias codex, with applied research from Nielsen Norman Group, the Interaction Design Foundation, and behavioral economics (Kahneman, Thaler, Cialdini). Per-principle citations live in the reference files.
+`ux-psychology-review`: the selection and four-stage structure follow public catalogues of cognitive biases, chiefly Buster Benson's cognitive bias codex and growth.design's *Psychology of Design* (not affiliated with either), with applied research from Nielsen Norman Group, the Interaction Design Foundation, and behavioral economics (Kahneman, Thaler, Cialdini). The one-line descriptions and the review method are original. The reference files hold summaries, not citations; the skill does not quote study results it cannot source.
 
 ## License
 

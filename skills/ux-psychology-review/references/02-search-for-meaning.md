@@ -1,8 +1,6 @@
-# Search for Meaning — Full Entries
+# Search for Meaning — Principle Index
 
 *Stage 2 of 4. Users fill gaps in what they see with assumptions, prior beliefs, and stories. These principles describe how meaning gets constructed — sometimes in ways that work for the design, sometimes against it.*
-
-> **Phase 2 enrichment status:** Stub. Full entries pending.
 
 ---
 

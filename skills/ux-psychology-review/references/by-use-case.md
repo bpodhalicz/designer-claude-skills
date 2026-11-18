@@ -1,6 +1,6 @@
 # Use-Case Index
 
-When the user asks for help with a specific UX problem, look it up here to find the principles most likely to apply. Then pull their full entries from the category reference files.
+When the user asks for help with a specific UX problem, look it up here to find the principles most likely to apply. Then check their summaries in the category reference files.
 
 This index is opinionated — it lists 4-8 principles per use case, picked for *practical leverage*, not exhaustiveness. The point is to give a tight set of starting tools, not 30 things to try.
 
@@ -109,8 +109,8 @@ The user has too many options and unclear paths.
 - **Progressive Disclosure** — most users want 3 settings, not 30
 - **Decision Fatigue** — order matters; put easy decisions first
 - **Visual Hierarchy** — make the recommended path the obvious one
-- **Recognition over recall** — show options; don't make users remember them
-- **Chunking / Miller's Law** — group settings into 5-9 clusters, not flat lists
+- **Recognition over recall** (Nielsen heuristic, outside the 106) — show options; don't make users remember them
+- **Chunking / Miller's Law** — group settings into small clusters, not flat lists
 
 ## Trust-building (new brand, sensitive data, high-stakes transactions)
 
@@ -122,7 +122,7 @@ User has no reason to trust you yet. Earn it.
 - **Aesthetic-Usability Effect** — pretty signals competent
 - **Pratfall Effect** — small admitted limitations increase credibility
 - **Familiarity Bias** — known patterns (lock icons, clear footers) reassure
-- **Transparency over manipulation** — long-term trust beats short-term conversion
+- **Transparency over manipulation** (guiding rule, outside the 106) — long-term trust beats short-term conversion
 
 ## Persuasion & landing pages
 
