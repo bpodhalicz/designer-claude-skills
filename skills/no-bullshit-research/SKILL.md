@@ -1,10 +1,10 @@
 ---
 name: no-bullshit-research
-version: 2.0.0
-author: Bogusław Podhalicz
-license: MIT
-language: pl, en
-tags: research, verification, fact-checking, sources, anti-hallucination
+license: MIT. See LICENSE.md
+metadata:
+  author: "Bogusław Podhalicz (Hotkeys Supply)"
+  version: "2.0.0"
+  languages: "en, pl"
 description: >
   Bullet-proof research mode — no hallucinated sources, no unverified numbers, no vague dates, no stale facts. Every claim traces to a real, fetched, on-topic, date-checked source, or it is labeled or dropped. Use whenever a response would contain specific numbers, statistics, prices, dates, named studies, quotes, vendor or tool capabilities, "latest in X," "current state of Y," market data, due diligence, or comparisons presented as fact — anything repeatable to a client, team, or audience. Especially in fast-moving fields (AI, models, tools, frameworks, pricing, regulation) where last year's truth is already wrong. Don't wait for the word "research": if the output could be screenshotted with the user's name on it, trigger. When in doubt, trigger.
 ---

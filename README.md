@@ -49,7 +49,8 @@ npx skills add bpodhalicz/designer-claude-skills
 
 1. Grab a skill from the [latest release](../../releases/latest) - or download the folder from `skills/`.
 2. Add it to Claude:
-   - **Claude.ai / Claude apps** - open Settings, find Skills, upload the `.skill` file. Current steps: https://support.claude.com
+   - **Claude Desktop** - right-click the `.skill` file, choose Open With → Claude, then confirm.
+   - **claude.ai in the browser** - turn on code execution in Settings → Capabilities, then go to Customize → Skills → + → Upload a skill and pick the `.skill` file. Current steps: https://support.claude.com
    - **Claude API / Agent SDK** - use the Skills API: https://docs.claude.com/en/docs/build-with-claude/skills
    - **Claude Code** — drop the unzipped folder into your skills directory.
 
@@ -59,7 +60,7 @@ That's it. Claude loads the skill automatically when a task calls for it.
 
 Built and maintained by **Bogusław Podhalicz**, design lead and senior product designer. These are the skills I use in real client and team work - sharpening how AI handles the parts of the job that need actual craft and judgment.
 
-Find me on LinkedIn: [https://www.linkedin.com/in/boguslaw-podhalicz/]
+Find me on [LinkedIn](https://www.linkedin.com/in/boguslaw-podhalicz/).
 
 ## Attribution
 
