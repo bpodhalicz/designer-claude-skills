@@ -15,7 +15,7 @@ design principles.
   or test write-up and flags designer-side biases (confirmation bias, anchoring,
   sunk cost, false consensus…) with the signal, a check and a concrete step.
 
-- **Version:** 1.2.0
+- **Version:** 1.2.1
 - **Languages:** answers in the language you write in
 - **License:** MIT, see `LICENSE.md`
 - **From:** Hotkeys Supply · hello@hotkeys.supply
@@ -55,6 +55,10 @@ won't quote study results or percentages it can't source, and it flags
 principles whose research is contested. Before sending a review it runs a
 short checklist: a named element and principle for every issue, no invented
 numbers, a dark-pattern section even when nothing was found.
+
+## What's new in 1.2.1
+- The skill description starts with what it does, so it's easier to find in
+  skill directories.
 
 ## What's new in 1.2.0
 - Reviews follow one fixed layout, with a priority and an Observed / Assumed
