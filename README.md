@@ -47,7 +47,7 @@ npx skills add bpodhalicz/designer-claude-skills
 
 **Manual install**
 
-1. Grab a skill from the [latest release](../../releases/latest) - or download the folder from `skills/`.
+1. Download the `.skill` file from [`dist/`](dist), or the folder from [`skills/`](skills).
 2. Add it to Claude:
    - **Claude Desktop** - right-click the `.skill` file, choose Open With → Claude, then confirm.
    - **claude.ai in the browser** - turn on code execution in Settings → Capabilities, then go to Customize → Skills → + → Upload a skill and pick the `.skill` file. Current steps: https://support.claude.com
