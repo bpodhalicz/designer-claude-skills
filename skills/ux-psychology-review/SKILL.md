@@ -1,10 +1,10 @@
 ---
 name: ux-psychology-review
-description: Apply design psychology — cognitive biases and behavioral principles — to review UI/UX work and generate ideas, recommendations, and critiques grounded in named principles. Use this skill whenever the user asks for a UX review, design critique, conversion analysis, onboarding/checkout/pricing/paywall feedback, "why might users drop off here," "how do I get users to X," or any product-design task where human psychology matters. Also trigger when the user wants to check a research synthesis, roadmap or design decision for team bias, brainstorm UX improvements, evaluate a flow against best practices, name the principle behind a pattern they've seen, or check a design for dark patterns. Don't wait for the user to say "psychology" — design reviews and UX recommendations are this skill's bread and butter even when phrased casually ("does this signup flow look ok?", "ideas for our pricing page", "review this dashboard").
+description: Review UI and UX work against 106 named cognitive biases and design principles: strengths, issues, dark patterns and fixes, each tied to a principle. Also generates ideas and checks team decisions for bias. Use this skill whenever the user asks for a UX review, design critique, conversion analysis, onboarding/checkout/pricing/paywall feedback, "why might users drop off here," "how do I get users to X," or any product-design task where human psychology matters. Also trigger when the user wants to check a research synthesis, roadmap or design decision for team bias, brainstorm UX improvements, evaluate a flow against best practices, name the principle behind a pattern they've seen, or check a design for dark patterns. Don't wait for the user to say "psychology" — design reviews and UX recommendations are this skill's bread and butter even when phrased casually ("does this signup flow look ok?", "ideas for our pricing page", "review this dashboard").
 license: MIT. See LICENSE.md
 metadata:
   author: "Bogusław Podhalicz (Hotkeys Supply)"
-  version: "1.2.0"
+  version: "1.2.1"
   languages: "en, pl"
 ---
 

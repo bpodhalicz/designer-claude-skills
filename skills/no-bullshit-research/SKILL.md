@@ -3,10 +3,10 @@ name: no-bullshit-research
 license: MIT. See LICENSE.md
 metadata:
   author: "Bogusław Podhalicz (Hotkeys Supply)"
-  version: "2.0.0"
+  version: "2.0.1"
   languages: "en, pl"
 description: >
-  Bullet-proof research mode — no hallucinated sources, no unverified numbers, no vague dates, no stale facts. Every claim traces to a real, fetched, on-topic, date-checked source, or it is labeled or dropped. Use whenever a response would contain specific numbers, statistics, prices, dates, named studies, quotes, vendor or tool capabilities, "latest in X," "current state of Y," market data, due diligence, or comparisons presented as fact — anything repeatable to a client, team, or audience. Especially in fast-moving fields (AI, models, tools, frameworks, pricing, regulation) where last year's truth is already wrong. Don't wait for the word "research": if the output could be screenshotted with the user's name on it, trigger. When in doubt, trigger.
+  Research with sources: every number, date, quote and vendor claim is traced to a page Claude actually opened and date-checked, or it is labeled as uncertain or dropped. Use whenever a response would contain specific numbers, statistics, prices, dates, named studies, quotes, vendor or tool capabilities, "latest in X," "current state of Y," market data, due diligence, or comparisons presented as fact — anything repeatable to a client, team, or audience. Especially in fast-moving fields (AI, models, tools, frameworks, pricing, regulation) where last year's truth is already wrong. Don't wait for the word "research": if the output could be screenshotted with the user's name on it, trigger. When in doubt, trigger.
 ---
 
 # No Bullshit Research
@@ -191,4 +191,4 @@ The last question is the real test. If the answer is "yes, a little" — go back
 
 ---
 
-*No Bullshit Research v2.0.0 · MIT · Bogusław Podhalicz. Background, rationale, and install notes in `README.md`.*
+*No Bullshit Research v2.0.1 · MIT · Bogusław Podhalicz. Background, rationale, and install notes in `README.md`.*
